@@ -5,11 +5,13 @@ BeginPackage["ProtectedSymbols`"]
 t::usage="symbol for time in models"
 eps::usage="symbol for stochastic variables in models"
 eqvdIf::usage="eqvdif placeholder for EquationValDrv in substitutions";
-
+e::usage="symbol for Format`"
+xx::usage="variable for polynomials xx[nn]"
+cum::usage="cumulants of errors for polynomials xx[ii], cum[ii,kk]"
 
 myN::usage="myN[xx_]:=(N[xx/.{t-1->$tm1,t+1->$tp1}])/.{$tm1->t-1,$tp1->t+1}"
 
-Protect[t,eps,eqvdIf,myN]
+Protect[t,eps,eqvdIf,myN,e,xx,cum]
 makeProtectedSymbol::usage="makeProtectedSymbol[symbName_String]  no context paths allowed"
 Begin["`Private`"] (* Begin Private Context *) 
 Unprotect[myN]

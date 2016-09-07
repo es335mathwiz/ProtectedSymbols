@@ -3,6 +3,7 @@
 	<name>ProtectedSymbolsProject</name>
 	<comment></comment>
 	<projects>
+		<project>AMASeriesRep</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
