@@ -7,7 +7,8 @@ eps::usage="symbol for stochastic variables in models"
 eqvdIf::usage="eqvdif placeholder for EquationValDrv in substitutions";
 e::usage="symbol for Format`"
 xx::usage="variable for polynomials xx[nn]"
-cum::usage="cumulants of errors for polynomials xx[ii], cum[ii,kk]"
+mom::usage="raw moments of errors for polynomials xx[ii], cum[ii,kk]"
+NA::usage="NA for getVarDataNAs in "
 
 myN::usage="myN[xx_]:=(N[xx/.{t-1->$tm1,t+1->$tp1}])/.{$tm1->t-1,$tp1->t+1}"
 NA::usage="Na for emscsToMma.m"
