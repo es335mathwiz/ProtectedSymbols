@@ -10,8 +10,9 @@ xx::usage="variable for polynomials xx[nn]"
 cum::usage="cumulants of errors for polynomials xx[ii], cum[ii,kk]"
 
 myN::usage="myN[xx_]:=(N[xx/.{t-1->$tm1,t+1->$tp1}])/.{$tm1->t-1,$tp1->t+1}"
+NA::usage="Na for emscsToMma.m"
 
-Protect[t,eps,eqvdIf,myN,e,xx,cum]
+Protect[t,eps,eqvdIf,myN,e,xx,cum,NA]
 makeProtectedSymbol::usage="makeProtectedSymbol[symbName_String]  no context paths allowed"
 Begin["`Private`"] (* Begin Private Context *) 
 Unprotect[myN]
