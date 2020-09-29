@@ -13,7 +13,13 @@ NA::usage="NA for getVarDataNAs in "
 myN::usage="myN[xx_]:=(N[xx/.{t-1->$tm1,t+1->$tp1}])/.{$tm1->t-1,$tp1->t+1}"
 NA::usage="Na for emscsToMma.m"
 
-Protect[t,eps,eqvdIf,myN,e,xx,cum,NA]
+sss::usage="s for contDisc calculations"    
+zzz::usage="z for contDisc calculations"    
+zzzInv::usage="z for contDisc calculations"    
+hhh::usage="h for contDisc calculations"    
+
+
+Protect[t,eps,eqvdIf,myN,e,xx,cum,NA,sss,zzz,zzzInv,hhh]
 makeProtectedSymbol::usage="makeProtectedSymbol[symbName_String]  no context paths allowed"
 Begin["`Private`"] (* Begin Private Context *) 
 Unprotect[myN]
